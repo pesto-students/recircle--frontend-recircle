@@ -41,7 +41,7 @@ function Home() {
                 p={8}
             >
                 <Heading size="lg" mb={12} mt={4} color={'green'}>Recycling Basics</Heading>
-                <Accordion allowToggle>
+                <Accordion allowMultiple>
                     <AccordionItem w={{ base: "300px", sm: "350px", md: "500px", lg: "900px" }} mb={5}>
                         <h2>
                             <AccordionButton _hover={{ backgroundColor: "none" }}>
