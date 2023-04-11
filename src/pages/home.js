@@ -1,6 +1,7 @@
 import { Image, Box, Flex, Text, Heading, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon } from "@chakra-ui/react";
 import myImage from "../assets/scrap1.png";
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 function Home() {
     return (
@@ -19,7 +20,7 @@ function Home() {
                     top="75%"
                     left="30%"
                     transform="translate(-50%, -50%)"
-                    bg="green.300"
+                    bg="whatsapp.300"
                     color="green"
                     p={6}
                     w={{ base: "270px", sm: "300px", md: "380px", lg: "450px" }}
@@ -41,7 +42,7 @@ function Home() {
                 p={8}
             >
                 <Heading size="lg" mb={12} mt={4} color={'green'}>Recycling Basics</Heading>
-                <Accordion allowToggle>
+                <Accordion allowToggle bg={"faintgrey"}>
                     <AccordionItem w={{ base: "300px", sm: "350px", md: "500px", lg: "900px" }} mb={5}>
                         <h2>
                             <AccordionButton _hover={{ backgroundColor: "none" }}>
@@ -110,7 +111,9 @@ function Home() {
                         </AccordionPanel>
                     </AccordionItem>
                 </Accordion>
+                <Heading>Our Services</Heading>
             </Flex>
+            <Footer position="auto" bottom="-10" left="0" right="0" />
         </>
     );
 }
