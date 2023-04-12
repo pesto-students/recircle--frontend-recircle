@@ -43,7 +43,8 @@ export default function Navbar() {
                 flexGrow={1}
             >
                 <NavLink href="#">Check Rate List</NavLink>
-                <NavLink href="#">Events</NavLink>
+                {/* <NavLink href="#">Events</NavLink> */}
+                <RouterLink to="/events" color='white'>Events</RouterLink>
                 <Button colorScheme="teal" variant="solid" size="sm">
                     <RouterLink to="/login">Log In</RouterLink>
                 </Button>
