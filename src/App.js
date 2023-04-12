@@ -8,6 +8,7 @@ import Events from './pages/event';
 import Event1 from './pages/event1';
 import Event2 from './pages/event2';
 import BuyerProfile from './pages/buyerProfile';
+import Dropoff from './pages/dropoff';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/event1" element={<Event1 />} />
         <Route exact path="/event2" element={<Event2 />} />
         <Route exact path="/buyerprofile" element={<BuyerProfile />} />
+        <Route exact path="/dropoff" element={<Dropoff />} />
       </Routes>
 
       {/* <Navbar /> */}
