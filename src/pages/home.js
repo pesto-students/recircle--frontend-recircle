@@ -111,7 +111,7 @@ function Home() {
                         </AccordionPanel>
                     </AccordionItem>
                 </Accordion>
-                <Heading>Our Services</Heading>
+                {/* <Heading>Our Services</Heading> */}
             </Flex>
             <Footer position="auto" bottom="-10" left="0" right="0" />
         </>
