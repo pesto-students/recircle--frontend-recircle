@@ -11,6 +11,8 @@ import BuyerProfile from './pages/buyerProfile';
 import Dropoff from './pages/dropoff';
 import SellScrap1 from './pages/sellScrap1';
 import SellScrap2 from './pages/sellScrap2';
+import SellScrap3 from './pages/sellScrap3';
+import SellScrap4 from './pages/sellScrap4';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route exact path="/dropoff" element={<Dropoff />} />
         <Route exact path="/sellScrap1" element={<SellScrap1 />} />
         <Route exact path="/sellScrap2" element={<SellScrap2 />} />
+        <Route exact path="/sellScrap3" element={<SellScrap3 />} />
+        <Route exact path="/sellScrap4" element={<SellScrap4 />} />
       </Routes>
 
       {/* <Navbar /> */}

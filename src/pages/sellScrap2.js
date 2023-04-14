@@ -33,23 +33,23 @@ const Page2 = () => {
       <Flex justify="center" alignItems="center" h="100vh" ml={100} mt={59} p={10} mb={300} mr={90}>
         <VStack spacing={4} alignItems="flex-start" mb={200}>
         <Flex direction="column" width={1000} mt={200}>
-  <Box w="100%" h="80px" bg="#38A327" borderRadius={10} p={2} mb={4} mt={200}>
+  <Box w="100%" h="70px" bg="#38A327" borderRadius={15} p={1} mb={4} mt={200}>
     {/* <Text fontSize="xl" fontWeight="semibold">Progress Tracker</Text> */}
-    <Flex justify="space-between" mt={4}>
+    <Flex justify="space-between" mt={2}>
       <Box flex="1">
-        <Text fontSize="lg" fontWeight="bold">Select Scrap</Text>
+        <Text fontSize="xl" fontWeight="bold">Select Scrap</Text>
       </Box>
       <Box flex="1">
-        <Text fontSize="lg" fontWeight="bold">PickUp Date</Text>
+        <Text fontSize="xl" fontWeight="bold">PickUp Date</Text>
       </Box>
       <Box flex="1">
-        <Text fontSize="lg" fontWeight="bold">Confirm</Text>
+        <Text fontSize="xl" fontWeight="bold">Confirm</Text>
       </Box>
     </Flex>
   </Box>
   <Progress
     value={30}
-    size="sm"
+    size="md"
     borderRadius={10}
     colorScheme="green"
     w="100%"
@@ -60,7 +60,7 @@ const Page2 = () => {
           <Text fontSize="30" fontWeight="bold">
             Select the materials you want to sell:
           </Text>
-          <Text fontSize="15" fontStyle="italic">
+          <Text fontSize="20" fontStyle="italic">
             Prices may fluctuate because of the recycling industry
           </Text>
           <CheckboxGroup
@@ -74,25 +74,25 @@ const Page2 = () => {
                 Paper:
               </Text>
               <HStack spacing={4}>
-  <Box bg="#D9D9D9" p={3} borderRadius={10}>
+  <Box bg="#D9D9D9" p={3.5} borderRadius={10}>
     <Checkbox value="newspaper" colorScheme="green">Newspaper</Checkbox>
   </Box>
-  <Box bg="lightgrey" p={3} borderRadius={10}>
+  <Box bg="lightgrey" p={3.5} borderRadius={10}>
     <Checkbox value="books" colorScheme="green">Books</Checkbox>
   </Box>
-  <Box bg="lightgrey" p={3} borderRadius={10}>
+  <Box bg="lightgrey" p={3.5} borderRadius={10}>
     <Checkbox value="carton" colorScheme="green">Carton</Checkbox>
   </Box>
-  <Box bg="lightgrey" p={3} borderRadius={10}>
+  <Box bg="lightgrey" p={3.5} borderRadius={10}>
     <Checkbox value="magazines" colorScheme="green">Magazines</Checkbox>
   </Box>
-  <Box bg="lightgrey" p={3} borderRadius={10}>
+  <Box bg="lightgrey" p={1.8} borderRadius={10}>
     <Checkbox value="white_paper" colorScheme="green">White Paper</Checkbox>
   </Box>
-  <Box bg="lightgrey" p={3} borderRadius={10}>
+  <Box bg="lightgrey" p={1.8} borderRadius={10}>
     <Checkbox value="record_paper" colorScheme="green">Record Paper</Checkbox>
   </Box>
-  <Box bg="lightgrey" p={3} borderRadius={10}>
+  <Box bg="lightgrey" p={1.8} borderRadius={10}>
     <Checkbox value="grey_board" colorScheme="green">Grey Board</Checkbox>
   </Box>
 </HStack>
@@ -232,9 +232,11 @@ const Page2 = () => {
           </HStack>
         </VStack>
       </CheckboxGroup>
-      <Button colorScheme="green" onClick={handleSubmit} >
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginLeft:"400"}}>
+      <Button colorScheme="green" size="lg">
         Continue
       </Button>
+    </div>
     </VStack>
   </Flex>
   <Footer />
