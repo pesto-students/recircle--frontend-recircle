@@ -9,7 +9,8 @@ import {
   Spacer,
   Flex,
   Box,
-  Progress
+  Progress,
+  Link
 } from '@chakra-ui/react';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
@@ -235,6 +236,8 @@ const Page2 = () => {
       <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginLeft:"400"}}>
       <Button colorScheme="green" size="lg">
         Continue
+        <Link href="/sellScrap3" marginRight="10px" color="black" fontWeight="normal">.
+            </Link>
       </Button>
     </div>
     </VStack>

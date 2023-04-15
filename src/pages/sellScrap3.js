@@ -11,7 +11,8 @@ import {
   Flex,
   Box,
   Progress,
-  Textarea
+  Textarea,
+  Link
 } from '@chakra-ui/react';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
@@ -105,6 +106,8 @@ const Page3 = () => {
               <Spacer />
               <Button colorScheme="green" onClick={handleSubmit}>
                   Continue
+                  <Link href="/sellScrap4" marginRight="10px" color="black" fontWeight="normal">.
+            </Link>
               </Button>
           </HStack>
       </Flex><Footer /></>

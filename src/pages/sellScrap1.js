@@ -152,7 +152,10 @@ function SellScrapPage1() {
       <li key={item}>{item}</li>
     ))}
   </ul> */}
-<Button onClick={handleContinue}  bg={"lightgreen"} p={7} fontSize={30} ml={50} mr={-60}>Raise PickUp Request</Button>
+<Button onClick={handleContinue}  bg={"lightgreen"} p={7} fontSize={30} ml={50} mr={-60}>Raise PickUp Request
+<Link href="/sellScrap2" marginRight="10px" color="black" fontWeight="normal">.
+            </Link>
+</Button>
 </Box>
       <Footer />
     </>

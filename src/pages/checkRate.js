@@ -7,6 +7,7 @@ import {
   InputLeftElement,
   Stack,
   HStack,
+  ScrollView
 } from '@chakra-ui/react';
 import { SearchIcon } from '@chakra-ui/icons';
 import Navbar from "../components/navbar";
@@ -114,20 +115,22 @@ const CheckRateListPage = () => {
                   value={searchQuery}
                   onChange={handleSearchChange} />
           </InputGroup>
-          <Stack spacing={8}>
+          <Stack spacing={4}>
               {filteredPrices.map(({ category, prices }) => (
                   <Box key={category}>
                       <Heading as="h2" size="lg" mb={2} mr={1200}>
                           {category.charAt(0).toUpperCase() + category.slice(1)}
                       </Heading>
-                      <HStack spacing={8}>
-                          {prices.map((p) => (
-                              <Box key={p.name} bg={'lightgray'} p={2} borderRadius={15}>
-                                  <Box>{p.name}</Box>
-                                  <Box>{`Rs${p.price}/kg`}</Box>
-                              </Box>
-                          ))}
-                      </HStack>
+                      <Box overflowY="scroll" height="200px">
+    <HStack spacing={6}>
+        {prices.map((p) => (
+            <Box key={p.name} bg={'lightgray'} p={2} borderRadius={15}>
+                <Box>{p.name}</Box>
+                <Box>{`Rs${p.price}/kg`}</Box>
+            </Box>
+        ))}
+    </HStack>
+</Box>
                   </Box>
               ))}
           </Stack>
