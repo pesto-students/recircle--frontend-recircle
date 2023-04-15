@@ -13,11 +13,12 @@ export default function Navbar() {
             justify="space-between"
             wrap="wrap"
             w="100%"
-            mb={8}
-            p={8}
-            height={{ base: 'auto', sm: 'auto', md: '100px' }}
+            mb={4}
+            p={4}
+            // height={{ base: 'auto', sm: 'auto', md: '150px' }}
+            height={{md: '120px' }}
             bg={useColorModeValue('#38A327')}
-            color={useColorModeValue('#38A327.800')}
+            color={useColorModeValue('#38A327.900')}
         >
             <Flex align="center">
                 <IconButton
@@ -42,15 +43,19 @@ export default function Navbar() {
                 justify={{ base: 'center', md: 'flex-end', xl: 'flex-end' }}
                 flexGrow={1}
             >
-                <NavLink href="#">Check Rate List</NavLink>
-                {/* <NavLink href="#">Events</NavLink> */}
-                <RouterLink to="/events" color='white'>Events</RouterLink>
-                <Button colorScheme="teal" variant="solid" size="sm">
-                    <RouterLink to="/login">Log In</RouterLink>
-                </Button>
-                <Button colorScheme="whatsapp" variant="solid" size="sm">
-                    <RouterLink to="/signup">Sign Up</RouterLink>
-                </Button>
+         
+            <Link href="/checkratelist" marginRight="10px" color="black" fontWeight="normal">
+              Check Rate List
+            </Link>
+            <Link href="/events" marginRight="10px" color="black" fontWeight="normal">
+              Events
+            </Link>
+            <Link href="/login" marginRight="10px" color="black" fontWeight="normal">
+              Log In
+            </Link>
+            <Link href="/signup" fontWeight="normal" color="black">
+              Sign Up
+            </Link>
             </Stack>
         </Flex>
     );
@@ -59,8 +64,11 @@ export default function Navbar() {
 function Logo() {
     return (
         <Box>
-            <Text fontSize="3xl" fontFamily="sans-serif" fontWeight="bold" color={'white'}>
+            <Text fontSize="4xl" fontFamily="sans-serif" fontWeight="bold" color={'white'}>
                 ReCircle
+            </Text>
+            <Text fontSize="small" fontStyle={'italic'} fontWeight="hairline" color={'black'} ml={50} >
+            <RouterLink to="/">Waste Management</RouterLink> 
             </Text>
             {/* <Image src={logo} alt="My Logo" boxSize="50px" objectFit="contain" /> */}
         </Box>

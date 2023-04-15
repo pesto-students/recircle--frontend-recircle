@@ -33,14 +33,14 @@ const Page4 = () => {
           </Box>
           <Progress value={100} size="md" borderRadius={10} colorScheme="green" w="70%" ml={200} mb={5}/>
           <Heading mr={600} fontSize={40} pb={5}>Pickup Confirmation</Heading>
-    <Box p={4} minH="calc(100vh - 200px)"  bg={'lightgrey'} borderRadius={10} w="70%" ml={200}>
-          <Box mb={4} bg={'lightgreen'} borderRadius={15}>
-              <Text fontSize="xl" fontWeight="bold" >
+    <Box p={4} minH="calc(100vh - 200px)"  bg="#9ECCA3" borderRadius={10} w="70%" ml={200}>
+          <Box mb={4}  borderRadius={15}>
+              <Text fontSize="2xl" fontWeight="bold" >
                   Order Summary
               </Text>
           </Box>
           <Stack spacing={4}>
-              <Box bg={'lightgreen'} borderRadius={15}>
+              <Box bg="#D9D9D9" borderRadius={15}>
                   <Text fontSize="lg" fontWeight="bold" mr={700}>
                       Scrap Items:
                   </Text>
@@ -61,7 +61,7 @@ const Page4 = () => {
                       <Text mr={600} pb={3}>No scrap items selected</Text>
                   )}
               </Box>
-              <Box bg={'lightgreen'} borderRadius={15}>
+              <Box bg="#D9D9D9" borderRadius={15}>
                   <Text fontSize="lg" fontWeight="bold" mr={680}>
                       Home Address:
                   </Text>
@@ -82,7 +82,7 @@ const Page4 = () => {
                       <Text pb={4} mr={600}>No home address provided</Text>
                   )}
               </Box>
-              <Box bg={'lightgreen'} borderRadius={15}>
+              <Box bg="#D9D9D9" borderRadius={15}>
                   <Text fontSize="lg" fontWeight="bold" mr={680}>
                       Pick-Up Date:
                   </Text>
@@ -90,8 +90,8 @@ const Page4 = () => {
                   <Text mr={680}>{pickupDate || 'No date selected'}</Text>
               </Box>
           </Stack>
-          <Button colorScheme="green" mt={5} width={300}>
-                  Continue
+          <Button bg="#38A327" mt={5} width={300} borderRadius={10}>
+                  Confirm
               </Button>
       </Box>
       <Footer/>
